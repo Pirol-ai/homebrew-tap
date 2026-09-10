@@ -2,22 +2,22 @@
 class Charta < Formula
   desc "Reference toolchain for Company as Code"
   homepage "https://github.com/Pirol-ai/company-as-code"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Pirol-ai/company-as-code/releases/download/v0.1.0/charta-aarch64-apple-darwin.tar.gz"
-      sha256 "c4fc274efdae1f647141dab3e92b8bf654016dc7b7f3cf32c6b5e96aa822de26"
+      url "https://github.com/Pirol-ai/company-as-code/releases/download/v0.2.0/charta-aarch64-apple-darwin.tar.gz"
+      sha256 "b17d8ada282c243d93149cef494843ddc3241854177a05c1f9fd77b95cf1449e"
     else
-      url "https://github.com/Pirol-ai/company-as-code/releases/download/v0.1.0/charta-x86_64-apple-darwin.tar.gz"
-      sha256 "06ad8714498feaa68e082f79ced57c9096cc21417bb1f7436e9f01d193535e43"
+      url "https://github.com/Pirol-ai/company-as-code/releases/download/v0.2.0/charta-x86_64-apple-darwin.tar.gz"
+      sha256 "1319475c46ed7a398ed487432be403f374b2db3b5075088334624cf4ae45e7a2"
     end
   end
 
   on_linux do
-    url "https://github.com/Pirol-ai/company-as-code/releases/download/v0.1.0/charta-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "45a71f83973b5ecf30b4fca5b3e283c88f088a6ac934b88e057fd061a16df696"
+    url "https://github.com/Pirol-ai/company-as-code/releases/download/v0.2.0/charta-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "9c9c0a73ae32e4235520910caf04e5aaad845a7e6d6ca5a0e459da2d797248a7"
   end
 
   def install
